@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RBC Insurance Roadmap</title>
+	<link href="/static/styles/style_results.css" rel="stylesheet">
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-light bg-light navigation">
+		<a class="navbar-brand nav-title" href="#">
+			<img id="image" src="/static/RBC_Logo_Insurance.svg" align="left" height="60" alt="">
+			<img id="image" src="/static/HOMI.png" height="60" alt="">
+		</a>
+	</nav>
+
+	<div class="container" class="back">
+
+		<h2 class="title">Results</h2>
+
+
+
+		<div class="panel with-nav-tabs panel-primary">
+			<div class="panel-heading">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#tab1primary" data-toggle="tab">&#60; 30</a>
+					</li>
+					<li>
+						<a href="#tab2primary" data-toggle="tab">30-39</a>
+					</li>
+					<li>
+						<a href="#tab3primary" data-toggle="tab">40-49</a>
+					</li>
+					<li>
+						<a href="#tab4primary" data-toggle="tab">50-59</a>
+					</li>
+					<li>
+						<a href="#tab5primary" data-toggle="tab">60 &#60;</a>
+					</li>
+				</ul>
+			</div>
+			<div class="panel-body">
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="tab1primary">
+
+						<div class="container">
+
+							<ul class="nav nav-pills nav-stacked col-md-2">
+								<li class="active">
+									<a href="#tab_a1" data-toggle="pill">Life Only</a>
+								</li>
+								<li>
+									<a href="#tab_b1" data-toggle="pill">Life &amp Disability</a>
+								</li>
+								<li>
+									<a href="#tab_c1" data-toggle="pill">Life &amp Critical Illness</a>
+								</li>
+							</ul>
+							<div class="tab-content col-md-10">
+								<div class="tab-pane active" id="tab_a1">
+
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_17.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart11"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>67%</strong> have not purchased any form of mortgage insurance in case of critical illness, disability, or death.</p>
+											<hr>
+											<p>
+												<strong>76%</strong> of men change their coverage after becoming a father.</p>
+											<hr>
+											<p>
+												<strong>95%</strong> do not fully understand their insurance coverage or the amounts.</p>
+											<hr>
+											
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+											
+											
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="tab-pane" id="tab_b1">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_17.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart12"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>52%</strong> do not have disability insurance from their employer.</p>
+											<hr>
+											<p>
+												<strong>51%</strong> returned to work sooner than their medical professional's recommendation.</p>
+											<hr>
+											<p>
+												<strong>68%</strong> acknowledged that a health crisis would have serious financial implications.</p>
+											<hr>
+											<p>
+												<strong>45%</strong> would have liked more time off after a health crisis but couldn’t due to finances.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab_c1">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_17.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart13"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will be diagnosed with heart disease or have a heart attack throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will develop cancer throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>2.6%</strong> of Canadians will have a stroke throughout their lifetime.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- tab content -->
+						</div>
+						<!-- end of container -->
+
+					</div>
+					<div class="tab-pane fade" id="tab2primary">
+						<div class="container">
+
+							<ul class="nav nav-pills nav-stacked col-md-2">
+								<li class="active">
+									<a href="#tab_a2" data-toggle="pill">Life Only</a>
+								</li>
+								<li>
+									<a href="#tab_b2" data-toggle="pill">Life &amp Disability</a>
+								</li>
+								<li>
+									<a href="#tab_c2" data-toggle="pill">Life &amp Critical Illness</a>
+								</li>
+							</ul>
+							<div class="tab-content col-md-10">
+								<div class="tab-pane active" id="tab_a2">
+
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_34.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart21"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>67%</strong> have not purchased any form of mortgage insurance in case of critical illness, disability, or death.</p>
+											<hr>
+											<p>
+												<strong>76%</strong> of men change their coverage after becoming a father.</p>
+											<hr>
+											<p>
+												<strong>95%</strong> do not fully understand their insurance coverage or the amounts.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="tab-pane" id="tab_b2">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_34.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart22"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>52%</strong> do not have disability insurance from their employer.</p>
+											<hr>
+											<p>
+												<strong>51%</strong> returned to work sooner than their medical professional's recommendation.</p>
+											<hr>
+											<p>
+												<strong>68%</strong> acknowledged that a health crisis would have serious financial implications.</p>
+											<hr>
+											<p>
+												<strong>45%</strong> would have liked more time off after a health crisis but couldn’t due to finances.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab_c2">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_34.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart23"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will be diagnosed with heart disease or have a heart attack throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will develop cancer throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>2.6%</strong> of Canadians will have a stroke throughout their lifetime.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- tab content -->
+						</div>
+						<!-- end of container -->
+					</div>
+
+					<div class="tab-pane fade" id="tab3primary">
+						<div class="container">
+
+							<ul class="nav nav-pills nav-stacked col-md-2">
+								<li class="active">
+									<a href="#tab_a3" data-toggle="pill">Life Only</a>
+								</li>
+								<li>
+									<a href="#tab_b3" data-toggle="pill">Life &amp Disability</a>
+								</li>
+								<li>
+									<a href="#tab_c3" data-toggle="pill">Life &amp Critical Illness</a>
+								</li>
+							</ul>
+							<div class="tab-content col-md-10">
+								<div class="tab-pane active" id="tab_a3">
+
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_42.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart31"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>67%</strong> have not purchased any form of mortgage insurance in case of critical illness, disability, or death.</p>
+											<hr>
+											<p>
+												<strong>76%</strong> of men change their coverage after becoming a father.</p>
+											<hr>
+											<p>
+												<strong>95%</strong> do not fully understand their insurance coverage or the amounts.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="tab-pane" id="tab_b3">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_42.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart32"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>52%</strong> do not have disability insurance from their employer.</p>
+											<hr>
+											<p>
+												<strong>51%</strong> returned to work sooner than their medical professional's recommendation.</p>
+											<hr>
+											<p>
+												<strong>68%</strong> acknowledged that a health crisis would have serious financial implications.</p>
+											<hr>
+											<p>
+												<strong>45%</strong> would have liked more time off after a health crisis but couldn’t due to finances.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab_c3">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_42.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart33"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will be diagnosed with heart disease or have a heart attack throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will develop cancer throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>2.6%</strong> of Canadians will have a stroke throughout their lifetime.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- tab content -->
+						</div>
+						<!-- end of container -->
+					</div>
+					<div class="tab-pane fade" id="tab4primary">
+						<div class="container">
+
+							<ul class="nav nav-pills nav-stacked col-md-2">
+								<li class="active">
+									<a href="#tab_a4" data-toggle="pill">Life Only</a>
+								</li>
+								<li>
+									<a href="#tab_b4" data-toggle="pill">Life &amp Disability</a>
+								</li>
+								<li>
+									<a href="#tab_c4" data-toggle="pill">Life &amp Critical Illness</a>
+								</li>
+							</ul>
+							<div class="tab-content col-md-10">
+								<div class="tab-pane active" id="tab_a4">
+
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_50.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart41"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>67%</strong> have not purchased any form of mortgage insurance in case of critical illness, disability, or death.</p>
+											<hr>
+											<p>
+												<strong>76%</strong> of men change their coverage after becoming a father.</p>
+											<hr>
+											<p>
+												<strong>95%</strong> do not fully understand their insurance coverage or the amounts.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="tab-pane" id="tab_b4">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_50.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart42"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>52%</strong> do not have disability insurance from their employer.</p>
+											<hr>
+											<p>
+												<strong>51%</strong> returned to work sooner than their medical professional's recommendation.</p>
+											<hr>
+											<p>
+												<strong>68%</strong> acknowledged that a health crisis would have serious financial implications.</p>
+											<hr>
+											<p>
+												<strong>45%</strong> would have liked more time off after a health crisis but couldn’t due to finances.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab_c4">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_50.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart43"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will be diagnosed with heart disease or have a heart attack throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will develop cancer throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>2.6%</strong> of Canadians will have a stroke throughout their lifetime.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- tab content -->
+						</div>
+						<!-- end of container -->
+					</div>
+					<div class="tab-pane fade" id="tab5primary">
+						<div class="container">
+
+							<ul class="nav nav-pills nav-stacked col-md-2">
+								<li class="active">
+									<a href="#tab_a5" data-toggle="pill">Life Only</a>
+								</li>
+								<li>
+									<a href="#tab_b5" data-toggle="pill">Life &amp Disability</a>
+								</li>
+								<li>
+									<a href="#tab_c5" data-toggle="pill">Life &amp Critical Illness</a>
+								</li>
+							</ul>
+							<div class="tab-content col-md-10">
+								<div class="tab-pane active" id="tab_a5">
+
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_29.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart51"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>67%</strong> have not purchased any form of mortgage insurance in case of critical illness, disability, or death.</p>
+											<hr>
+											<p>
+												<strong>76%</strong> of men change their coverage after becoming a father.</p>
+											<hr>
+											<p>
+												<strong>95%</strong> do not fully understand their insurance coverage or the amounts.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="tab-pane" id="tab_b5">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_29.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart52"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>52%</strong> do not have disability insurance from their employer.</p>
+											<hr>
+											<p>
+												<strong>51%</strong> returned to work sooner than their medical professional's recommendation.</p>
+											<hr>
+											<p>
+												<strong>68%</strong> acknowledged that a health crisis would have serious financial implications.</p>
+											<hr>
+											<p>
+												<strong>45%</strong> would have liked more time off after a health crisis but couldn’t due to finances.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab_c5">
+									<div class="row">
+
+										<div class="col-md-4">
+											<img id="image" src="/static/elvis_29.jpg" width="100%" alt="">
+											<hr>
+											<p>
+												<strong>Gender:</strong> {{ .Gender }}</p>
+											<p>
+												<strong>Age:</strong> {{ .Age }}</p>
+											<p>
+												<strong>Mortgage Balance:</strong> {{ .MortgageBalance }}</p>
+											<p>
+												<strong>Monthly Payment:</strong> {{ .MonthlyPayment }}</p>
+											<p>
+												<strong>Years Remaining:</strong> {{ .YearsRemaining }}</p>
+										</div>
+
+										<div class="col-md-4">
+											<h3>Estimates</h3>
+											<hr>
+											<div id="piechart53"></div>
+											<hr>
+											<p>
+												<strong>Probability of accidental death</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+											<p>
+												<strong>Debt-to-insurance ratio</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+
+											<hr>
+
+											<p>
+												<strong>Cost of mortgage insurance</strong>
+											</p>
+											<div class="progress" style="height: 25px">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<hr>
+
+										</div>
+
+										<div class="col-md-3">
+											<h3>Facts</h3>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will be diagnosed with heart disease or have a heart attack throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>1 in 2</strong> Canadians will develop cancer throughout their lifetime.</p>
+											<hr>
+											<p>
+												<strong>2.6%</strong> of Canadians will have a stroke throughout their lifetime.</p>
+											<hr>
+											<a href="http://www.rbcroyalbank.com/creditor/homeprotector.html" class="btn btn-danger btn-block" role="button" target="_blank">Get a Quote Now</a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- tab content -->
+						</div>
+						<!-- end of container -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script type="text/javascript">
+		// Load google charts
+		google.charts.load('current', {
+			'packages': ['corechart']
+		});
+		google.charts.setOnLoadCallback(drawChart1);
+		google.charts.setOnLoadCallback(drawChart2);
+		google.charts.setOnLoadCallback(drawChart3);
+		google.charts.setOnLoadCallback(drawChart4);
+		google.charts.setOnLoadCallback(drawChart5);
+
+		// Draw the chart and set the chart values
+		function drawChart1() {
+			var data = google.visualization.arrayToDataTable([
+				['Covered', 'Percentage'],
+				['Yes', 20],
+				['No', 80],
+
+			]);
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'People with Insurance Coverage',
+				'width': 350,
+				'height': 200
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart1 = new google.visualization.PieChart(document.getElementById('piechart11'));
+			chart1.draw(data, options);
+			var chart2 = new google.visualization.PieChart(document.getElementById('piechart12'));
+			chart2.draw(data, options);
+			var chart3 = new google.visualization.PieChart(document.getElementById('piechart13'));
+			chart3.draw(data, options);
+		}
+
+		function drawChart2() {
+			var data = google.visualization.arrayToDataTable([
+				['Covered', 'Percentage'],
+				['Yes', 35],
+				['No', 65],
+
+			]);
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'People with Insurance Coverage',
+				'width': 350,
+				'height': 200
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart1 = new google.visualization.PieChart(document.getElementById('piechart21'));
+			chart1.draw(data, options);
+			var chart2 = new google.visualization.PieChart(document.getElementById('piechart22'));
+			chart2.draw(data, options);
+			var chart3 = new google.visualization.PieChart(document.getElementById('piechart23'));
+			chart3.draw(data, options);
+		}
+
+		function drawChart3() {
+			var data = google.visualization.arrayToDataTable([
+				['Covered', 'Percentage'],
+				['Yes', 50],
+				['No', 50],
+
+			]);
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'People with Insurance Coverage',
+				'width': 350,
+				'height': 200
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart1 = new google.visualization.PieChart(document.getElementById('piechart31'));
+			chart1.draw(data, options);
+			var chart2 = new google.visualization.PieChart(document.getElementById('piechart32'));
+			chart2.draw(data, options);
+			var chart3 = new google.visualization.PieChart(document.getElementById('piechart33'));
+			chart3.draw(data, options);
+		}
+
+		function drawChart4() {
+			var data = google.visualization.arrayToDataTable([
+				['Covered', 'Percentage'],
+				['Yes', 65],
+				['No', 35],
+
+			]);
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'People with Insurance Coverage',
+				'width': 350,
+				'height': 200
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart1 = new google.visualization.PieChart(document.getElementById('piechart41'));
+			chart1.draw(data, options);
+			var chart2 = new google.visualization.PieChart(document.getElementById('piechart42'));
+			chart2.draw(data, options);
+			var chart3 = new google.visualization.PieChart(document.getElementById('piechart43'));
+			chart3.draw(data, options);
+		}
+
+		function drawChart5() {
+			var data = google.visualization.arrayToDataTable([
+				['Covered', 'Percentage'],
+				['Yes', 80],
+				['No', 20],
+
+			]);
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'People with Insurance Coverage',
+				'width': 350,
+				'height': 200
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart1 = new google.visualization.PieChart(document.getElementById('piechart51'));
+			chart1.draw(data, options);
+			var chart2 = new google.visualization.PieChart(document.getElementById('piechart52'));
+			chart2.draw(data, options);
+			var chart3 = new google.visualization.PieChart(document.getElementById('piechart53'));
+			chart3.draw(data, options);
+		}
+	</script>
+
+	<script>
+		function openCity(evt, cityName) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			// Show the current tab, and add an "active" class to the link that opened the tab
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("div.list-group>a").click(function (e) {
+				e.preventDefault();
+				$(this).siblings('a.active').removeClass("active");
+				$(this).addClass("active");
+				var index = $(this).index();
+				$("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+				$("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+			});
+		});
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
